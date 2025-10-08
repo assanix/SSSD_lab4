@@ -24,4 +24,3 @@ curl "http://localhost:8001/deserialize?data=Y2NvcHlfcmVnCl9yZWNvbnN0cnVjdG9yCnA
 # 4. No authentication
 curl http://localhost:8001/admin/users
 ```
-
