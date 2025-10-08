@@ -1,9 +1,5 @@
 # SSSD Lab 4: Security Vulnerabilities
 
-**Student:** Kurbanova Anelya  
-**ID:** 22B030555  
-**GitHub:** https://github.com/AnelyaKurbanova/SSSD_lab4.git
-
 ## Setup
 
 ```bash
@@ -28,17 +24,3 @@ curl "http://localhost:8001/deserialize?data=Y2NvcHlfcmVnCl9yZWNvbnN0cnVjdG9yCnA
 # 4. No authentication
 curl http://localhost:8001/admin/users
 ```
-
-## Vulnerabilities
-
-| Issue | Endpoint | Risk |
-|-------|----------|------|
-| Info leakage | `/crash` | Stack trace exposure |
-| Hardcoded secrets | Code | Credential compromise |
-| Config in repo | `config.yml` | Password exposure |
-| Unsafe deserialization | `/deserialize` | RCE vulnerability |
-| Missing auth | `/admin/users` | Unauthorized access |
-
-## Fix
-
-Create `security-fixes` branch and fix all vulnerabilities in `app.py`.
